@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "daisyui/dist/full.css";
+
+:root[data-theme="light"],
+:root[data-theme="default"] {
+  --primary: #71d7ff;
+  --secondary: #f7a8d8;
+  --tertiary: #ffffff;
+  --accent: #78716c;
+  --background: #ffffff;
+  --neutral: #a8a29e;
+  --base-100: rgb(235, 221, 221);
+  --info: #aad0e0;
+  --success: #36d399;
+  --warning: #fbbd23;
+  --error: #f87272;
+  --foreground: rgb(108, 104, 104);
+}
+
+[data-theme="dark"] {
+  --primary: #1e3a8a;
+  --secondary: #4b5563;
+  --tertiary: #9ca3af;
+  --accent: #d1d5db;
+  --background: #151617;
+  --neutral: #374151;
+  --base-100: #1f2937;
+  --info: #2563eb;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --foreground: #ededed;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
